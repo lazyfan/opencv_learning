@@ -10,8 +10,8 @@ int main(int argc, char** argv) {
 		return -1;
 	}
 	char input_win[] = "input image";
-	cvtColor(src, src, CV_BGR2GRAY);
-	namedWindow(input_win, CV_WINDOW_AUTOSIZE);
+	cvtColor(src, src, COLOR_BGR2GRAY);
+	namedWindow(input_win, WINDOW_AUTOSIZE);
 	imshow(input_win, src);
 
 	// contrast and brigthtness changes 
@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
 	}
 
 	char output_title[] = "contrast and brightness change demo";
-	namedWindow(output_title, CV_WINDOW_AUTOSIZE);
+	namedWindow(output_title, WINDOW_AUTOSIZE);
 	imshow(output_title, dst);
 
 	waitKey(0);

@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 		
 		imshow("linuxlogo", src1);
 		imshow("win7logo", src2);
-		namedWindow("blend demo", CV_WINDOW_AUTOSIZE);
+		namedWindow("blend demo", WINDOW_AUTOSIZE);
 		imshow("blend demo", dst);
 	}
 	else {

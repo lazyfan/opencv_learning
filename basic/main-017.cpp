@@ -15,8 +15,8 @@ int main(int argc, char** argv) {
 
 	char INPUT_WIN[] = "input image";
 	char OUTPUT_WIN[] = "Custom Blur Filter Result";
-	namedWindow(INPUT_WIN, CV_WINDOW_AUTOSIZE);
-	namedWindow(OUTPUT_WIN, CV_WINDOW_AUTOSIZE);
+	namedWindow(INPUT_WIN, WINDOW_AUTOSIZE);
+	namedWindow(OUTPUT_WIN, WINDOW_AUTOSIZE);
 
 	imshow(INPUT_WIN, src);
 	

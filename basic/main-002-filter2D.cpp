@@ -6,7 +6,7 @@ using namespace cv;
 
 int main(int argc, char** argv) {
 	Mat src, dst;
-	src = imread("D:/images/ppm/lena.ppm");
+	src = imread("../data/1.jpg");
 	if (!src.data) {
 		printf("could not load image...\n");
 		return -1;

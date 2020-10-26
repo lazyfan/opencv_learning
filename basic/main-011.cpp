@@ -9,12 +9,12 @@ int main(int argc, char** argv) {
 		printf("could not load image...\n");
 		return -1;
 	}
-	namedWindow("input image", CV_WINDOW_AUTOSIZE);
+	namedWindow("input image", WINDOW_AUTOSIZE);
 	imshow("input image", src);
 
 	//medianBlur(src, dst, 3);
 	bilateralFilter(src, dst, 15, 100, 5);
-	namedWindow("BiBlur Filter Result", CV_WINDOW_AUTOSIZE);
+	namedWindow("BiBlur Filter Result", WINDOW_AUTOSIZE);
 	imshow("BiBlur Filter Result", dst);
 
 	Mat resultImg;

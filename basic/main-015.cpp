@@ -13,8 +13,8 @@ int main(int agrc, char** argv) {
 
 	char INPUT_WIN[] = "input image";
 	char OUTPUT_WIN[] = "sample up";
-	namedWindow(INPUT_WIN, CV_WINDOW_AUTOSIZE);
-	namedWindow(OUTPUT_WIN, CV_WINDOW_AUTOSIZE);
+	namedWindow(INPUT_WIN, WINDOW_AUTOSIZE);
+	namedWindow(OUTPUT_WIN, WINDOW_AUTOSIZE);
 	imshow(INPUT_WIN, src);
 
 	// ÉÏ²ÉÑù
@@ -28,7 +28,7 @@ int main(int agrc, char** argv) {
 
 	// DOG
 	Mat gray_src, g1, g2, dogImg;
-	cvtColor(src, gray_src, CV_BGR2GRAY);
+	cvtColor(src, gray_src, COLOR_BGR2GRAY);
 	GaussianBlur(gray_src, g1, Size(5, 5), 0, 0);
 	GaussianBlur(g1, g2, Size(5, 5), 0, 0);
 	subtract(g1, g2, dogImg, Mat());

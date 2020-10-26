@@ -12,11 +12,11 @@ int main(int argc, char** argv) {
 
 	char INPUT_WIN[] = "input image";
 	char OUTPUT_WIN[] = "result image";
-	namedWindow(INPUT_WIN, CV_WINDOW_AUTOSIZE);
+	namedWindow(INPUT_WIN, WINDOW_AUTOSIZE);
 	imshow(INPUT_WIN, src);
 
 	Mat gray_src;
-	cvtColor(src, gray_src, CV_BGR2GRAY);
+	cvtColor(src, gray_src, COLOR_BGR2GRAY);
 	imshow("gray image", gray_src);
 	
 	Mat binImg;

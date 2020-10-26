@@ -78,7 +78,7 @@ void RandomLineDemo() {
 	Point pt1;
 	Point pt2;
 	Mat bg = Mat::zeros(bgImage.size(), bgImage.type());
-	namedWindow("random line demo", CV_WINDOW_AUTOSIZE);
+	namedWindow("random line demo", WINDOW_AUTOSIZE);
 	for (int i = 0; i < 100000; i++) {
 		pt1.x = rng.uniform(0, bgImage.cols);
 		pt2.x = rng.uniform(0, bgImage.cols);

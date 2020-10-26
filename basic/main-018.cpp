@@ -12,8 +12,8 @@ int main(int argc, char** argv) {
 	}
 	char INPUT_WIN[] = "input image";
 	char OUTPUT_WIN[] = "Border Demo";
-	namedWindow(INPUT_WIN, CV_WINDOW_AUTOSIZE);
-	namedWindow(OUTPUT_WIN, CV_WINDOW_AUTOSIZE);
+	namedWindow(INPUT_WIN, WINDOW_AUTOSIZE);
+	namedWindow(OUTPUT_WIN, WINDOW_AUTOSIZE);
 	imshow(INPUT_WIN, src);
 	/*
 	int top = (int)(0.05*src.rows);

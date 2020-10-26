@@ -35,7 +35,7 @@ int main(int argc, char** args) {
 		}
 	}
 	*/
-	namedWindow("My Image", CV_WINDOW_AUTOSIZE);
+	namedWindow("My Image", WINDOW_AUTOSIZE);
 	imshow("My Image", draw);
 	waitKey(0);
 	return 0;

@@ -13,13 +13,13 @@ int main(int argc, char** argv) {
 
 	char INPUT_TITLE[] = "input image";
 	char OUTPUT_TITLE[] = "sobel-demo";
-	namedWindow(INPUT_TITLE, CV_WINDOW_AUTOSIZE);
-	namedWindow(OUTPUT_TITLE, CV_WINDOW_AUTOSIZE);
+	namedWindow(INPUT_TITLE, WINDOW_AUTOSIZE);
+	namedWindow(OUTPUT_TITLE, WINDOW_AUTOSIZE);
 	imshow(INPUT_TITLE, src);
 
 	Mat gray_src;
 	GaussianBlur(src, dst, Size(3, 3), 0, 0);
-	cvtColor(dst, gray_src, CV_BGR2GRAY);
+	cvtColor(dst, gray_src, COLOR_BGR2GRAY);
 	imshow("gray image", gray_src);
 
 	Mat xgrad, ygrad;

@@ -11,8 +11,8 @@ int main(int argc, char** argv) {
 	}
 	char input_title[] = "input image";
 	char output_title[] = "blur image";
-	namedWindow(input_title, CV_WINDOW_AUTOSIZE);
-	namedWindow(output_title, CV_WINDOW_AUTOSIZE);
+	namedWindow(input_title, WINDOW_AUTOSIZE);
+	namedWindow(output_title, WINDOW_AUTOSIZE);
 	imshow(input_title, src);
 
 	blur(src, dst, Size(11, 11), Point(-1, -1));
