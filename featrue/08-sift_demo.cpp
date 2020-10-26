@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 		printf("could not load image...\n");
 		return -1;
 	}
-	namedWindow("input image", CV_WINDOW_AUTOSIZE);
+	namedWindow("input image", WINDOW_AUTOSIZE);
 	imshow("input image", src);
 
 	int numFeatures = 400;
@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 
 	Mat keypoint_img;
 	drawKeypoints(src, keypoints, keypoint_img, Scalar::all(-1), DrawMatchesFlags::DEFAULT);
-	namedWindow("SIFT KeyPoints", CV_WINDOW_AUTOSIZE);
+	namedWindow("SIFT KeyPoints", WINDOW_AUTOSIZE);
 	imshow("SIFT KeyPoints", keypoint_img);
 
 	waitKey(0);

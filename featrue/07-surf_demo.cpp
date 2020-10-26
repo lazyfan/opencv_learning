@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 		printf("could not load image...\n");
 		return -1;
 	}
-	namedWindow("input image", CV_WINDOW_AUTOSIZE);
+	namedWindow("input image", WINDOW_AUTOSIZE);
 	imshow("input image", src);
 
 	// SURFÌØÕ÷¼ì²â
